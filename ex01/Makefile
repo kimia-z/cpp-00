@@ -1,10 +1,10 @@
-NAME = megaphone
+NAME = phonebook
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 CPP = c++
 
-SRC = megaphone.cpp
+SRC = Contact.cpp PhoneBook.cpp main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -14,7 +14,7 @@ $(NAME) : $(OBJ)
 	$(CPP) $(CFLAGS) $(OBJ) -o $(NAME)
 
 %.o : %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CPP) $(CFLAGS) -c $< -o $@
 
 clean :
 	rm -rf $(OBJ)

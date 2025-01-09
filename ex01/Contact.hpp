@@ -13,16 +13,16 @@ private:
 	std::string darkestSecret;
 
 public:
-	void setFirstName(std::string input);
-	void setLastName(std::string input);
-	void setNickname(std::string input);
-	void setPhoneNumber(std::string input);
-	void setDarkestSecret(std::string input);
-	std::string getFirstName();
-	std::string getLastName();
-	std::string getNickname();
-	std::string getPhoneNumber();
-	std::string getDarkestSecret();
+	void setFirstName(const std::string &input);
+	void setLastName(const std::string &input);
+	void setNickname(const std::string &input);
+	void setPhoneNumber(const std::string &input);
+	void setDarkestSecret(const std::string &input);
+	std::string getFirstName() const;
+	std::string getLastName() const;
+	std::string getNickname() const;
+	std::string getPhoneNumber() const;
+	std::string getDarkestSecret() const;
 };
 
 
