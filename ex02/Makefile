@@ -1,6 +1,6 @@
 NAME = account
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror
 
 CPP = c++
 
